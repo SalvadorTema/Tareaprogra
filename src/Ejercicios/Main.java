@@ -35,5 +35,22 @@ public class Main {
         prod1.mostrar();
         System.out.println("--\n");
 
-    }
+        //Ejercicio 3: Cuenta con pin
+        
+         CuentaBancaria miCuenta = new CuentaBancaria("Alexander Tema", 1000.0, 1234);
+
+         System.out.println("Prueba de seguridad");
+            
+          // 1. Intento con PIN incorrecto
+            miCuenta.retirar(100.0, 0000); 
+            
+          // 2. Intento con PIN correcto pero mucho dinero
+            miCuenta.retirar(5000.0, 1234);
+            
+          // 3. Intento correcto
+          miCuenta.retirar(250.0, 1234);
+
+          miCuenta.mostrarSaldo();
+        }
 }
+
