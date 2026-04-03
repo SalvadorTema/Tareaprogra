@@ -51,6 +51,20 @@ public class Main {
           miCuenta.retirar(250.0, 1234);
 
           miCuenta.mostrarSaldo();
+          System.out.println("--\n");
+          
+          //Ejercicio 4:Curso y Calificaciones
+          
+          System.out.println("Resultado de notas"); 
+          // Resultado aprobado 
+          Curso curso1 = new Curso("Programacion orientada a objetos", 85, 75, 90);
+          curso1.mostrarResultados();
+          
+          //Resultado reprobado
+          Curso curso2 = new Curso("Matematica discreta", 30, 40, 50);
+          curso2.mostrarResultados();
+          System.out.println("--\n");
+             
         }
 }
 
