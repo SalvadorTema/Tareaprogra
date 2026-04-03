@@ -65,6 +65,22 @@ public class Main {
           curso2.mostrarResultados();
           System.out.println("--\n");
              
+          //Ejercicio 5: Estudiante y Beca
+          System.out.println("Consulta de becas");
+          
+          // Caso con beca
+          Estudiante est1 = new Estudiante("2026-001", "Alexander Tema", 92.5);
+          est1.mostrarInfo();
+          
+          // Caso sin beca
+          Estudiante est2 = new Estudiante("2026-002", "Juan Perez", 70.0);
+          est2.mostrarInfo();
+          
+          // Caso con promedio invalido
+          Estudiante est3 = new Estudiante("2026-003", "Jorje Cifuentes", 110.0);
+          est3.mostrarInfo();
+       
         }
+	
 }
 
