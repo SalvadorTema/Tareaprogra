@@ -148,6 +148,19 @@ public class Main {
           // Tercera partida "no supera el récord"
           alexander.actualizarPuntaje(800);
           alexander.mostrarEstadisticas();
+          System.out.println("--\n");
+          
+       //Ejercicio 10: Factura
+          
+          System.out.println("Generando facturas");
+
+          // Factura correcta
+          Factura f1 = new Factura("F-001", "Laptop Gaming", 2, 8500.00);
+          f1.mostrarFactura();
+
+          // Factura con errores cantidad negativa
+          Factura f2 = new Factura("F-002", "Mouse Óptico", -5, 150.00);
+          f2.mostrarFactura();
         }
 	
 }
