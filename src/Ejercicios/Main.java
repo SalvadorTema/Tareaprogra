@@ -97,6 +97,26 @@ public class Main {
           System.out.println("Temperatura final fijada: " + temp.getCelsius() + "°C");
           System.out.println("--\n");
           
+       // Ejercicio 7: Reloj con Formato
+          
+          System.out.println("Prueba de reloj digital");
+
+          // 1. Probamos una hora normal 
+          Reloj miReloj = new Reloj(8, 5, 9);
+          System.out.println("Hora inicial: " + miReloj.mostrarHora());
+
+          // 2. Probamos cambiar a una hora que no necesita ceros extra
+          miReloj.setHora(14);
+          miReloj.setMinuto(30);
+          miReloj.setSegundo(45);
+          System.out.println("Hora modificada: " + miReloj.mostrarHora());
+
+          // 3 Intentamos poner valores inválidos
+          System.out.println(" Probando validaciones");
+          miReloj.setHora(25);    
+          miReloj.setMinuto(70);  
+          
+          System.out.println("Resultado tras valores incorrectos: " + miReloj.mostrarHora());
         }
 	
 }
