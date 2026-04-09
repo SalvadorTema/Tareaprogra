@@ -79,7 +79,24 @@ public class Main {
           // Caso con promedio invalido
           Estudiante est3 = new Estudiante("2026-003", "Jorje Cifuentes", 110.0);
           est3.mostrarInfo();
-       
+          System.out.println("--\n");
+          
+       // Ejercicio 6:Termómetro Inteligente
+          
+          System.out.println("Pruebas de tmperatura");
+
+          Termometro temp = new Termometro(25.0); // 25 grados ambiente
+          
+          System.out.println("Grados Celsius: " + temp.getCelsius() + "°C");
+          System.out.println("Grados Fahrenheit: " + temp.getFahrenheit() + "°F");
+
+          // Prueba de validación 
+          
+          System.out.println("\nIntentando poner una temperatura imposible (-300°C):");
+          temp.setCelsius(-300.0);
+          System.out.println("Temperatura final fijada: " + temp.getCelsius() + "°C");
+          System.out.println("--\n");
+          
         }
 	
 }
