@@ -130,6 +130,24 @@ public class Main {
           // Caso 2: Teléfono muy corto y Email sin arroba
           Contacto c2 = new Contacto("Contacto Error", "123", "correo_falso.com");
           c2.mostrarContacto();
+          System.out.println("--\n");
+          
+       // Ejercicio 9:Juego
+          
+          System.out.println("Modo gamer");
+          Jugador alexander = new Jugador("Alexander10");
+
+          // Primera partida
+          alexander.actualizarPuntaje(500);
+          alexander.mostrarEstadisticas();
+
+          // Segunda partida "supera el récord"
+          alexander.actualizarPuntaje(1200);
+          alexander.mostrarEstadisticas();
+
+          // Tercera partida "no supera el récord"
+          alexander.actualizarPuntaje(800);
+          alexander.mostrarEstadisticas();
         }
 	
 }
