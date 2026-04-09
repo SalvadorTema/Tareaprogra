@@ -117,6 +117,19 @@ public class Main {
           miReloj.setMinuto(70);  
           
           System.out.println("Resultado tras valores incorrectos: " + miReloj.mostrarHora());
+          System.out.println("--\n");
+          
+       // Ejercicio 8: Contacto
+          
+          System.out.println("Lista de contactos");
+
+          // Caso 1: Todo correcto
+          Contacto c1 = new Contacto("Alexander Tema", "55443322", "alexander@estudiante.com");
+          c1.mostrarContacto();
+
+          // Caso 2: Teléfono muy corto y Email sin arroba
+          Contacto c2 = new Contacto("Contacto Error", "123", "correo_falso.com");
+          c2.mostrarContacto();
         }
 	
 }
